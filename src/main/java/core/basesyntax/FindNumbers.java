@@ -15,7 +15,7 @@ public class FindNumbers {
     public int[] getAllNumbers(String text) {
 
         String[] temporaryArray = text.replaceAll("[^-0-9]+"," ").trim().split(" ");
-        int [] resultArray = new int[temporaryArray.length];
+        int[] resultArray = new int[temporaryArray.length];
         for (int i = 0; i < temporaryArray.length; i++) {
             resultArray[i] = Integer.parseInt(temporaryArray[i]) * 2;
         }
